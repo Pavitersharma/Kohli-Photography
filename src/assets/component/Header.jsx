@@ -11,12 +11,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Kohli Photography" className="w-36 md:w-40" />
+          <Link to="/"><img src={logo} alt="Kohli Photography" className="w-36 md:w-40" /></Link>
         </div>
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link to="/home" className="hover:text-yellow-500 transition">Home</Link>
+          <Link to="/" className="hover:text-yellow-500 transition">Home</Link>
           <Link to="/services" className="hover:text-yellow-500 transition">Services</Link>
           <Link to="/portfolio" className="hover:text-yellow-500 transition">Portfolio</Link>
           <Link to="/about" className="hover:text-yellow-500 transition">About</Link>

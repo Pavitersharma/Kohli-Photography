@@ -6,6 +6,12 @@ import slider1 from "../images/1.jpg";
 import slider2 from "../images/2.jpg";
 import slider3 from "../images/3.jpg";
 import wedding from "../images/wedding.png";
+import service1 from "../images/service/1.webp"
+import service2 from "../images/service/2.webp"
+import service3 from "../images/service/3.webp"
+import service4 from "../images/service/4.webp"
+import service5 from "../images/service/5.webp"
+import service6 from "../images/service/6.webp"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,31 +38,44 @@ export default function Homepage() {
     { number: "98%", label: "Client Satisfaction" },
   ];
   const services = [
-    {
-      icon: <FaCamera size={30} />,
-      title: "Wedding Photography",
-      description:
-        "Capturing the magic of your special day with timeless elegance and artistic vision.",
-    },
-    {
-      icon: <FaVideo size={30} />,
-      title: "Video Production",
-      description:
-        "Cinematic storytelling that brings your events to life through professional videography.",
-    },
-    {
-      icon: <FaUsers size={30} />,
-      title: "Pre-Wedding Shoots",
-      description:
-        "Romantic pre-wedding photography in stunning locations that tell your love story.",
-    },
-    {
-      icon: <FaBriefcase size={30} />,
-      title: "Corporate Events",
-      description:
-        "Document your business milestones with professional photography that reflects your brand.",
-    },
-  ];
+  {
+    icon: <img src={service1} alt="Wedding Photography" />,
+    title: "Wedding Photography",
+    description:
+      "Capturing the emotions, elegance, and joy of your big day through timeless and artistic wedding portraits.",
+  },
+  {
+    icon: <img src={service2} alt="Video Production" />,
+    title: "Video Production",
+    description:
+      "Transforming moments into cinematic stories with high-quality visuals and creative direction for every occasion.",
+  },
+  {
+    icon: <img src={service3} alt="Pre-Wedding Shoots" />,
+    title: "Pre-Wedding Shoots",
+    description:
+      "Celebrate your love story with stunning pre-wedding shoots that blend romance, style, and natural beauty.",
+  },
+  {
+    icon: <img src={service4} alt="Fashion Photography" />,
+    title: "Fashion Photography",
+    description:
+      "Showcasing style and confidence through bold, high-end fashion photography designed for brands and portfolios.",
+  },
+  {
+    icon: <img src={service5} alt="Model Shoot" />,
+    title: "Model Shoot",
+    description:
+      "Professional model photoshoots that highlight your best angles, expressions, and individuality for a standout portfolio.",
+  },
+  {
+    icon: <img src={service6} alt="Birthday Photography" />,
+    title: "Birthday Photography",
+    description:
+      "Capturing the laughter, joy, and excitement of your special day with vibrant and lively birthday photography.",
+  },
+];
+
 
   return (
     <div>
@@ -190,7 +209,7 @@ export default function Homepage() {
               className="bg-[#151515] p-8 rounded-xl border border-transparent hover:border-orange-500 hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] transition-all duration-300"
             >
               <div className="flex justify-center mb-4">
-                <div className="bg-[#1e1e1e] p-4 rounded-full text-orange-500">
+                <div className=" text-orange-500">
                   {service.icon}
                 </div>
               </div>
@@ -235,7 +254,22 @@ export default function Homepage() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Call Us</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p>
+                    <a
+                      href="tel:+919769703480"
+                      className="text-gray-400 cursor-pointer"
+                    >
+                      +91 (976) 970-3480
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="tel:+916399230526"
+                      className="text-gray-400 cursor-pointer"
+                    >
+                      +91 (639) 923-0526
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
