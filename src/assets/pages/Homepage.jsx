@@ -1,0 +1,280 @@
+import React from "react";
+import Slider from "react-slick";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaCamera, FaVideo, FaUsers, FaBriefcase } from "react-icons/fa";
+import slider1 from "../images/1.jpg";
+import slider2 from "../images/2.jpg";
+import slider3 from "../images/3.jpg";
+import wedding from "../images/wedding.png";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Footer from "../component/Footer";
+
+export default function Homepage() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    arrows: false,
+    fade: true,
+  };
+
+  const stats = [
+    { number: "500+", label: "Projects Done" },
+    { number: "50+", label: "Happy Clients" },
+    { number: "10+", label: "Years Experience" },
+    { number: "98%", label: "Client Satisfaction" },
+  ];
+  const services = [
+    {
+      icon: <FaCamera size={30} />,
+      title: "Wedding Photography",
+      description:
+        "Capturing the magic of your special day with timeless elegance and artistic vision.",
+    },
+    {
+      icon: <FaVideo size={30} />,
+      title: "Video Production",
+      description:
+        "Cinematic storytelling that brings your events to life through professional videography.",
+    },
+    {
+      icon: <FaUsers size={30} />,
+      title: "Pre-Wedding Shoots",
+      description:
+        "Romantic pre-wedding photography in stunning locations that tell your love story.",
+    },
+    {
+      icon: <FaBriefcase size={30} />,
+      title: "Corporate Events",
+      description:
+        "Document your business milestones with professional photography that reflects your brand.",
+    },
+  ];
+
+  return (
+    <div>
+      <div className="relative w-full h-[90vh] overflow-hidden">
+        <Slider {...settings}>
+          {/* Slide 1 */}
+          <div>
+            <img
+              src={slider1}
+              alt="Kohli Photography Slide 1"
+              className="w-full h-[90vh] object-cover"
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col items-center justify-center text-white text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Capture Your Moments
+              </h1>
+              <p className="text-lg md:text-2xl mb-6">
+                Kohli Photography — Where Every Shot Tells a Story
+              </p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                Book a Shoot
+              </button>
+            </div>
+          </div>
+
+          {/* Slide 2 */}
+          <div>
+            <img
+              src={slider2}
+              alt="Kohli Photography Slide 2"
+              className="w-full h-[150vh] object-cover"
+            />
+          </div>
+
+          {/* Slide 3 */}
+          <div>
+            <img
+              src={slider3}
+              alt="Kohli Photography Slide 3"
+              className="w-full h-[150vh] object-cover"
+            />
+          </div>
+        </Slider>
+      </div>
+      <div className="bg-[#111] text-center py-10">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-15 md:gap-20">
+          {stats.map((item, index) => (
+            <div key={index} className="text-white">
+              <h2 className="text-4xl font-bold text-orange-500">
+                {item.number}
+              </h2>
+              <p className="text-gray-300 mt-2">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-[#0b0b0b] text-center py-16 px-4">
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-white mb-4">
+          About <span className="text-orange-500">Kohli Photography</span>
+        </h2>
+        <p className="text-gray-400 max-w-5xl mx-auto mb-12 leading-normal">
+          At Kohli Photography, we believe that every moment tells a story —
+          your story. As one of the best wedding photographers in Delhi, our
+          passion lies in capturing the real emotions, timeless expressions, and
+          unforgettable memories that make every occasion truly special. With
+          years of experience and a deep love for visual storytelling, our team
+          combines creativity, professionalism, and advanced photography
+          techniques to deliver results that go beyond just pictures — we create
+          art that speaks to your heart. Whether it’s a grand wedding
+          celebration, an elegant pre-wedding shoot, a family function, or any
+          other special event, we make sure every frame reflects the essence of
+          your joy and connection. From the smallest candid smile to the most
+          cinematic wedding moments, our goal is to preserve your memories with
+          perfection and authenticity. Based in New Delhi, Kohli Photography
+          proudly serves clients all across India. Our expertise in candid
+          wedding photography and cinematic wedding videography has earned us
+          the trust of countless happy couples and families. We’ve had the honor
+          of capturing hundreds of beautiful stories — each one unique,
+          emotional, and timeless. At Kohli Photography, your happiness is our
+          true inspiration. We work closely with every client to understand
+          their vision, ensuring a personalized, smooth, and stress-free
+          experience from booking to delivery. Seeing your smiles when you
+          relive your special day through our lens is what drives us to keep
+          raising the bar with every project.
+        </p>
+      </div>
+
+      {/* dummy image */}
+      <div className="w-full h-auto">
+        <img
+          src={wedding}
+          alt="Wedding"
+          className="w-full h-auto object-cover md:h-[80vh] lg:h-[100vh]"
+        />
+      </div>
+      <div className="bg-[#0b0b0b] text-center py-16 px-4">
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-white mb-4">
+          Our <span className="text-orange-500">Vision</span>
+        </h2>
+        <p className="text-gray-400 max-w-5xl mx-auto mb-12 leading-normal">
+          At Kohli Photography, our vision is to create timeless stories through
+          our lens — stories filled with emotion, beauty, and authenticity. We
+          believe photography is not just about capturing faces, but about
+          preserving feelings, moments, and memories that speak forever. Our
+          goal is to be recognized as one of the most trusted and creative
+          photography brands in India, known for our cinematic storytelling and
+          personalized experience. We aim to blend art and technology seamlessly
+          — delivering photographs and films that not only look stunning but
+          also touch hearts. Every couple, every family, and every celebration
+          has its own rhythm, its own soul. Our vision is to bring that essence
+          to life — crafting visuals that you’ll cherish for a lifetime.
+        </p>
+      </div>
+      <div className="bg-[#0b0b0b] text-center py-16 px-4">
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-white mb-4">
+          Our <span className="text-orange-500">Services</span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+          We offer comprehensive photography and production services tailored to
+          your unique needs.
+        </p>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-[#151515] p-8 rounded-xl border border-transparent hover:border-orange-500 hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] transition-all duration-300"
+            >
+              <div className="flex justify-center mb-4">
+                <div className="bg-[#1e1e1e] p-4 rounded-full text-orange-500">
+                  {service.icon}
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="bg-[#0b0b0b] text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          {/* LEFT CONTENT */}
+          <div>
+            <h2 className="text-4xl font-bold mb-3">
+              Let’s Create{" "}
+              <span className="text-orange-500">Something Amazing</span>
+            </h2>
+            <p className="text-gray-400 mb-10">
+              Get in touch to discuss your next project
+            </p>
+
+            {/* Contact Info */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="bg-[#1a1a1a] p-4 rounded-full text-orange-500">
+                  <FaEnvelope size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Email Us</h4>
+                  <p className="text-gray-400">info@kohliphotography.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="bg-[#1a1a1a] p-4 rounded-full text-orange-500">
+                  <FaPhoneAlt size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold">Call Us</h4>
+                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT FORM */}
+          <div>
+            <form className="space-y-5">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full bg-[#111111] border border-[#222222] rounded-md px-4 py-3 text-gray-200 focus:outline-none focus:border-orange-500"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full bg-[#111111] border border-[#222222] rounded-md px-4 py-3 text-gray-200 focus:outline-none focus:border-orange-500"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="w-full bg-[#111111] border border-[#222222] rounded-md px-4 py-3 text-gray-200 focus:outline-none focus:border-orange-500"
+              />
+              <textarea
+                rows="4"
+                placeholder="Tell us about your event"
+                className="w-full bg-[#111111] border border-[#222222] rounded-md px-4 py-3 text-gray-200 focus:outline-none focus:border-orange-500 resize-none"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-orange-400 to-yellow-500 text-black font-semibold py-3 rounded-md shadow-[0_0_25px_rgba(255,165,0,0.4)] hover:opacity-90 transition-all duration-300"
+              >
+                SUBMIT ENQUIRY
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+}
