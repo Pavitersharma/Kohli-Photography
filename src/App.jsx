@@ -7,6 +7,7 @@ import Homepage from "./assets/pages/Homepage";
 import About from "./assets/pages/About";
 import { Routes, Route } from "react-router-dom";
 import Portfolio from "./assets/pages/Portfolio";
+import Footer from "./assets/component/Footer";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+     <Footer/>
+
     </>
   );
 }

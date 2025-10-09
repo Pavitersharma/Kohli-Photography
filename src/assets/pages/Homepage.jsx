@@ -1,23 +1,28 @@
+// ✅ Importing necessary libraries and assets
 import React from "react";
 import Slider from "react-slick";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import { FaCamera, FaVideo, FaUsers, FaBriefcase } from "react-icons/fa";
+
+// ✅ Importing images
 import slider1 from "../images/1.jpg";
 import slider2 from "../images/2.jpg";
 import slider3 from "../images/3.jpg";
 import wedding from "../images/wedding.png";
-import service1 from "../images/service/1.webp"
-import service2 from "../images/service/2.webp"
-import service3 from "../images/service/3.webp"
-import service4 from "../images/service/4.webp"
-import service5 from "../images/service/5.webp"
-import service6 from "../images/service/6.webp"
+import service1 from "../images/service/1.webp";
+import service2 from "../images/service/2.webp";
+import service3 from "../images/service/3.webp";
+import service4 from "../images/service/4.webp";
+import service5 from "../images/service/5.webp";
+import service6 from "../images/service/6.webp";
+import collage from "../images/collage.webp";
 
+// ✅ Importing CSS for react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from "../component/Footer";
 
+// ✅ Main Homepage Component
 export default function Homepage() {
+  // 🎯 Slider Configuration
   const settings = {
     dots: true,
     infinite: true,
@@ -31,54 +36,57 @@ export default function Homepage() {
     fade: true,
   };
 
+  // 🎯 Stats Section Data
   const stats = [
     { number: "500+", label: "Projects Done" },
     { number: "50+", label: "Happy Clients" },
     { number: "10+", label: "Years Experience" },
     { number: "98%", label: "Client Satisfaction" },
   ];
-  const services = [
-  {
-    icon: <img src={service1} alt="Wedding Photography" />,
-    title: "Wedding Photography",
-    description:
-      "Capturing the emotions, elegance, and joy of your big day through timeless and artistic wedding portraits.",
-  },
-  {
-    icon: <img src={service2} alt="Video Production" />,
-    title: "Video Production",
-    description:
-      "Transforming moments into cinematic stories with high-quality visuals and creative direction for every occasion.",
-  },
-  {
-    icon: <img src={service3} alt="Pre-Wedding Shoots" />,
-    title: "Pre-Wedding Shoots",
-    description:
-      "Celebrate your love story with stunning pre-wedding shoots that blend romance, style, and natural beauty.",
-  },
-  {
-    icon: <img src={service4} alt="Fashion Photography" />,
-    title: "Fashion Photography",
-    description:
-      "Showcasing style and confidence through bold, high-end fashion photography designed for brands and portfolios.",
-  },
-  {
-    icon: <img src={service5} alt="Model Shoot" />,
-    title: "Model Shoot",
-    description:
-      "Professional model photoshoots that highlight your best angles, expressions, and individuality for a standout portfolio.",
-  },
-  {
-    icon: <img src={service6} alt="Birthday Photography" />,
-    title: "Birthday Photography",
-    description:
-      "Capturing the laughter, joy, and excitement of your special day with vibrant and lively birthday photography.",
-  },
-];
 
+  // 🎯 Services Section Data
+  const services = [
+    {
+      icon: <img src={service1} alt="Wedding Photography" />,
+      title: "Wedding Photography",
+      description:
+        "Capturing the emotions, elegance, and joy of your big day through timeless and artistic wedding portraits.",
+    },
+    {
+      icon: <img src={service2} alt="Video Production" />,
+      title: "Video Production",
+      description:
+        "Transforming moments into cinematic stories with high-quality visuals and creative direction for every occasion.",
+    },
+    {
+      icon: <img src={service3} alt="Pre-Wedding Shoots" />,
+      title: "Pre-Wedding Shoots",
+      description:
+        "Celebrate your love story with stunning pre-wedding shoots that blend romance, style, and natural beauty.",
+    },
+    {
+      icon: <img src={service4} alt="Fashion Photography" />,
+      title: "Fashion Photography",
+      description:
+        "Showcasing style and confidence through bold, high-end fashion photography designed for brands and portfolios.",
+    },
+    {
+      icon: <img src={service5} alt="Model Shoot" />,
+      title: "Model Shoot",
+      description:
+        "Professional model photoshoots that highlight your best angles, expressions, and individuality for a standout portfolio.",
+    },
+    {
+      icon: <img src={service6} alt="Birthday Photography" />,
+      title: "Birthday Photography",
+      description:
+        "Capturing the laughter, joy, and excitement of your special day with vibrant and lively birthday photography.",
+    },
+  ];
 
   return (
     <div>
+      {/* ===================== 🏞️ HERO / SLIDER SECTION ===================== */}
       <div className="relative w-full h-[90vh] overflow-hidden">
         <Slider {...settings}>
           {/* Slide 1 */}
@@ -120,6 +128,8 @@ export default function Homepage() {
           </div>
         </Slider>
       </div>
+
+      {/* ===================== 📊 STATS SECTION ===================== */}
       <div className="bg-[#111] text-center py-10">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-15 md:gap-20">
           {stats.map((item, index) => (
@@ -132,39 +142,18 @@ export default function Homepage() {
           ))}
         </div>
       </div>
+
+      {/* ===================== 🧡 ABOUT SECTION ===================== */}
       <div className="bg-[#0b0b0b] text-center py-16 px-4">
-        {/* Heading */}
         <h2 className="text-4xl font-bold text-white mb-4">
           About <span className="text-orange-500">Kohli Photography</span>
         </h2>
         <p className="text-gray-400 max-w-5xl mx-auto mb-12 leading-normal">
-          At Kohli Photography, we believe that every moment tells a story —
-          your story. As one of the best wedding photographers in Delhi, our
-          passion lies in capturing the real emotions, timeless expressions, and
-          unforgettable memories that make every occasion truly special. With
-          years of experience and a deep love for visual storytelling, our team
-          combines creativity, professionalism, and advanced photography
-          techniques to deliver results that go beyond just pictures — we create
-          art that speaks to your heart. Whether it’s a grand wedding
-          celebration, an elegant pre-wedding shoot, a family function, or any
-          other special event, we make sure every frame reflects the essence of
-          your joy and connection. From the smallest candid smile to the most
-          cinematic wedding moments, our goal is to preserve your memories with
-          perfection and authenticity. Based in New Delhi, Kohli Photography
-          proudly serves clients all across India. Our expertise in candid
-          wedding photography and cinematic wedding videography has earned us
-          the trust of countless happy couples and families. We’ve had the honor
-          of capturing hundreds of beautiful stories — each one unique,
-          emotional, and timeless. At Kohli Photography, your happiness is our
-          true inspiration. We work closely with every client to understand
-          their vision, ensuring a personalized, smooth, and stress-free
-          experience from booking to delivery. Seeing your smiles when you
-          relive your special day through our lens is what drives us to keep
-          raising the bar with every project.
+          At Kohli Photography, we believe that every moment tells a story — your story. As one of the best wedding photographers in Delhi, our passion lies in capturing the real emotions, timeless expressions, and unforgettable memories that make every occasion truly special. With years of experience and a deep love for visual storytelling, our team combines creativity, professionalism, and advanced photography techniques to deliver results that go beyond just pictures — we create art that speaks to your heart. Whether it’s a grand wedding celebration, an elegant pre-wedding shoot, a family function, or any other special event, we make sure every frame reflects the essence of your joy and connection. From the smallest candid smile to the most cinematic wedding moments, our goal is to preserve your memories with perfection and authenticity. Based in New Delhi, Kohli Photography proudly serves clients all across India. Our expertise in candid wedding photography and cinematic wedding videography has earned us the trust of countless happy couples and families. We’ve had the honor of capturing hundreds of beautiful stories — each one unique, emotional, and timeless. At Kohli Photography, your happiness is our true inspiration. We work closely with every client to understand their vision, ensuring a personalized, smooth, and stress-free experience from booking to delivery. Seeing your smiles when you relive your special day through our lens is what drives us to keep raising the bar with every project.
         </p>
       </div>
 
-      {/* dummy image */}
+      {/* ===================== 💍 FULL-WIDTH IMAGE ===================== */}
       <div className="w-full h-auto">
         <img
           src={wedding}
@@ -172,27 +161,19 @@ export default function Homepage() {
           className="w-full h-auto object-cover md:h-[80vh] lg:h-[100vh]"
         />
       </div>
+
+      {/* ===================== 🎯 VISION SECTION ===================== */}
       <div className="bg-[#0b0b0b] text-center py-16 px-4">
-        {/* Heading */}
         <h2 className="text-4xl font-bold text-white mb-4">
           Our <span className="text-orange-500">Vision</span>
         </h2>
         <p className="text-gray-400 max-w-5xl mx-auto mb-12 leading-normal">
-          At Kohli Photography, our vision is to create timeless stories through
-          our lens — stories filled with emotion, beauty, and authenticity. We
-          believe photography is not just about capturing faces, but about
-          preserving feelings, moments, and memories that speak forever. Our
-          goal is to be recognized as one of the most trusted and creative
-          photography brands in India, known for our cinematic storytelling and
-          personalized experience. We aim to blend art and technology seamlessly
-          — delivering photographs and films that not only look stunning but
-          also touch hearts. Every couple, every family, and every celebration
-          has its own rhythm, its own soul. Our vision is to bring that essence
-          to life — crafting visuals that you’ll cherish for a lifetime.
+          At Kohli Photography, our vision is to create timeless stories through our lens — stories filled with emotion, beauty, and authenticity. We believe photography is not just about capturing faces, but about preserving feelings, moments, and memories that speak forever. Our goal is to be recognized as one of the most trusted and creative photography brands in India, known for our cinematic storytelling and personalized experience. We aim to blend art and technology seamlessly — delivering photographs and films that not only look stunning but also touch hearts. Every couple, every family, and every celebration has its own rhythm, its own soul. Our vision is to bring that essence to life — crafting visuals that you’ll cherish for a lifetime.
         </p>
       </div>
+
+      {/* ===================== 📷 SERVICES SECTION ===================== */}
       <div className="bg-[#0b0b0b] text-center py-16 px-4">
-        {/* Heading */}
         <h2 className="text-4xl font-bold text-white mb-4">
           Our <span className="text-orange-500">Services</span>
         </h2>
@@ -208,10 +189,8 @@ export default function Homepage() {
               key={index}
               className="bg-[#151515] p-8 rounded-xl border border-transparent hover:border-orange-500 hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] transition-all duration-300"
             >
-              <div className="flex justify-center mb-4">
-                <div className=" text-orange-500">
-                  {service.icon}
-                </div>
+              <div className="flex justify-center mb-4 text-orange-500">
+                {service.icon}
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 {service.title}
@@ -224,6 +203,67 @@ export default function Homepage() {
         </div>
       </div>
 
+      {/* ===================== 🖼️ COLLAGE IMAGE ===================== */}
+      <div className="w-full h-auto">
+        <img
+          src={collage}
+          alt="collage"
+          className="w-full h-auto object-cover md:h-[90vh] lg:h-[100vh]"
+        />
+      </div>
+
+      {/* ===================== 🙌 WHY CHOOSE US SECTION ===================== */}
+      <section className="bg-[#0b0b0b] text-white py-20 px-6 text-center">
+        <h2 className="text-4xl font-bold mb-6">
+          Why <span className="text-orange-500">Choose Us</span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-12">
+          At Kohli Photography, we go beyond just taking pictures — we create
+          timeless stories filled with emotions, beauty, and perfection.
+        </p>
+
+        {/* Q&A Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {[
+            {
+              q: "📸 What makes our photography unique?",
+              a: "Every shot is crafted with artistic vision and emotional depth — ensuring your photos reflect real moments and pure emotions.",
+            },
+            {
+              q: "🎥 Do we provide both photo and video coverage?",
+              a: "Yes, our team specializes in both photography and cinematic videography to cover every moment from start to finish.",
+            },
+            {
+              q: "🌍 Do we travel for shoots?",
+              a: "Absolutely! Whether it's a destination wedding or outdoor fashion shoot, we travel anywhere to make your vision a reality.",
+            },
+            {
+              q: "💡 How do we ensure quality?",
+              a: "We use premium equipment, expert lighting, and professional editing to deliver flawless and high-resolution results every time.",
+            },
+            {
+              q: "🕓 How soon do clients receive their photos/videos?",
+              a: "We value your excitement — our efficient workflow ensures timely delivery without compromising on editing quality.",
+            },
+            {
+              q: "🤝 Why trust Kohli Photography?",
+              a: "Our reputation is built on creativity, professionalism, and a deep commitment to making every client’s experience truly memorable.",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#151515] p-8 rounded-xl border border-transparent hover:border-orange-500 hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] transition-all duration-300 text-left"
+            >
+              <h3 className="text-lg font-semibold text-orange-500 mb-2">
+                {item.q}
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ===================== 📩 CONTACT / ENQUIRY SECTION ===================== */}
       <section className="bg-[#0b0b0b] text-white py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT CONTENT */}
@@ -238,6 +278,7 @@ export default function Homepage() {
 
             {/* Contact Info */}
             <div className="space-y-6">
+              {/* Email */}
               <div className="flex items-center space-x-4">
                 <div className="bg-[#1a1a1a] p-4 rounded-full text-orange-500">
                   <FaEnvelope size={20} />
@@ -248,6 +289,7 @@ export default function Homepage() {
                 </div>
               </div>
 
+              {/* Phone */}
               <div className="flex items-center space-x-4">
                 <div className="bg-[#1a1a1a] p-4 rounded-full text-orange-500">
                   <FaPhoneAlt size={20} />
@@ -308,7 +350,6 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
