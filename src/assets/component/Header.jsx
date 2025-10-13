@@ -10,9 +10,15 @@ export default function Header() {
     <header className="bg-black text-white fixed w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Link to="/"><img src={logo} alt="Kohli Photography" className="w-36 md:w-40" /></Link>
-        </div>
+       <div className="flex items-center space-x-2">
+  <Link to="/">
+    <img
+      src={logo}
+      alt="Kohli Photography"
+      className="w-24 sm:w-28 md:w-36 lg:w-40 object-contain"
+    />
+  </Link>
+</div>
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex items-center gap-6">
