@@ -1,6 +1,7 @@
 import React from 'react'
 import owner from "../images/about/owner.webp"
 import { FaCamera, FaHeart, FaMedal, FaUsers } from "react-icons/fa";
+import { FaWhatsapp, FaPhone } from "react-icons/fa";
 
 export default function About() {
   const missions = [
@@ -104,6 +105,29 @@ With a passion for capturing raw emotions and timeless beauty, we turn your prec
         </div>
       </div>
     </section>
+    <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+      
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/916399230526"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        title="Chat on WhatsApp"
+      >
+        <FaWhatsapp className="text-white w-7 h-7" />
+      </a>
+
+      {/* Call Button */}
+      <a
+        href="tel:+916399230526"
+        className="w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        title="Call Us"
+      >
+        <FaPhone className="text-black w-7 h-7" />
+      </a>
+    </div>
+    
         
     </>
   )
