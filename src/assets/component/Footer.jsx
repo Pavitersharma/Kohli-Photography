@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -36,29 +37,29 @@ export default function Footer() {
             <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <a href="#" class="hover:text-yellow-500">
+                <Link to="/" class="hover:text-yellow-500">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500">
+                <Link to="about" class="hover:text-yellow-500">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500">
+                <Link to="services" class="hover:text-yellow-500">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500">
+                <Link to="/portfolio" class="hover:text-yellow-500">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" class="hover:text-yellow-500">
+                <Link to="/contact" class="hover:text-yellow-500">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -79,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" class="hover:text-yellow-500">
-                  Video Production
+                  Maternity shoot
                 </a>
               </li>
               <li>
@@ -106,7 +107,7 @@ export default function Footer() {
             <ul class="space-y-3 text-gray-400 text-sm">
               <li class="flex items-start space-x-2">
                 <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
-                <span>Someshwar Talli Bazar Almora (Uttarakhand)</span>
+                <span>Someshwar Talli Bazar, Almora (Uttarakhand)</span>
               </li>
               <li class="flex items-center space-x-2">
                 <i class="fas fa-phone text-yellow-500"></i>

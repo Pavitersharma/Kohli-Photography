@@ -4,10 +4,10 @@ import Slider from "react-slick";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 // ✅ Importing images
-import slider1 from "../images/1.jpg";
-import slider2 from "../images/2.jpg";
-import slider3 from "../images/3.jpg";
-import wedding from "../images/wedding.png";
+import slider1 from "../images/1.webp";
+import slider2 from "../images/2.webp";
+import slider3 from "../images/3.webp";
+import wedding from "../images/wedding.webp";
 import service1 from "../images/service/1.webp";
 import service2 from "../images/service/2.webp";
 import service3 from "../images/service/3.webp";
@@ -32,7 +32,7 @@ export default function Homepage() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
-    arrows: false,
+    arrows: true,
     fade: true,
   };
 
@@ -54,9 +54,9 @@ export default function Homepage() {
     },
     {
       icon: <img src={service2} alt="Video Production" />,
-      title: "Video Production",
+      title: "Maternity shoot",
       description:
-        "Transforming moments into cinematic stories with high-quality visuals and creative direction for every occasion.",
+        "Capturing the glow of motherhood — timeless moments of love and new beginnings.",
     },
     {
       icon: <img src={service3} alt="Pre-Wedding Shoots" />,
@@ -87,14 +87,14 @@ export default function Homepage() {
   return (
     <div>
       {/* ===================== 🏞️ HERO / SLIDER SECTION ===================== */}
-      <div className="relative w-full h-[90vh] overflow-hidden">
+      <div className="relative w-full h-[90vh] overflow-hidden ">
         <Slider {...settings}>
           {/* Slide 1 */}
           <div>
             <img
               src={slider1}
               alt="Kohli Photography Slide 1"
-              className="w-full h-[90vh] object-cover"
+              className="w-full h-[100vh] object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col items-center justify-center text-white text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -114,7 +114,7 @@ export default function Homepage() {
             <img
               src={slider2}
               alt="Kohli Photography Slide 2"
-              className="w-full h-[150vh] object-cover"
+              className="w-full h-[140vh] object-cover"
             />
           </div>
 
@@ -130,7 +130,7 @@ export default function Homepage() {
       </div>
 
       {/* ===================== 📊 STATS SECTION ===================== */}
-      <div className="bg-[#111] text-center py-10">
+      {/* <div className="bg-[#111] text-center py-10">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-15 md:gap-20">
           {stats.map((item, index) => (
             <div key={index} className="text-white">
@@ -141,7 +141,7 @@ export default function Homepage() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* ===================== 🧡 ABOUT SECTION ===================== */}
       <div className="bg-[#0b0b0b] text-center py-16 px-4">
@@ -298,18 +298,19 @@ export default function Homepage() {
                   <h4 className="text-lg font-semibold">Call Us</h4>
                   <p>
                     <a
-                      href="tel:+919769703480"
+                      href="tel:916399230526"
                       className="text-gray-400 cursor-pointer"
                     >
-                      +91 (976) 970-3480
+                      +91 (639) 923-0526
+                      
                     </a>
                   </p>
                   <p>
                     <a
-                      href="tel:+916399230526"
+                      href="tel:+919769703480"
                       className="text-gray-400 cursor-pointer"
                     >
-                      +91 (639) 923-0526
+                      +91 (976) 970-3480
                     </a>
                   </p>
                 </div>

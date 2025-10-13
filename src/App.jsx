@@ -8,6 +8,7 @@ import About from "./assets/pages/About";
 import { Routes, Route } from "react-router-dom";
 import Portfolio from "./assets/pages/Portfolio";
 import Footer from "./assets/component/Footer";
+import Contact from "./assets/pages/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
      <Footer/>
 
