@@ -149,13 +149,15 @@ export default function ContactSection() {
 
             {/* Phone Input */}
             <div>
-              <label className="block text-white font-medium mb-2">Phone</label>
+              <label className="block text-white font-medium mb-2">Phone <span className="text-yellow-500">*</span></label>
+             
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="+1 (555) 123-4567"
+                placeholder=" Your number"
+                required
                 className="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors"
               />
             </div>
@@ -187,28 +189,28 @@ export default function ContactSection() {
           </form>
         </div>
       </div>
-      <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-      
-      {/* WhatsApp Button */}
-      <a
-        href="https://wa.me/916399230526"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        title="Chat on WhatsApp"
-      >
-        <FaWhatsapp className="text-white w-7 h-7" />
-      </a>
+      <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/916399230526"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+    title="Chat on WhatsApp"
+  >
+    <FaWhatsapp className="text-white w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+  </a>
 
-      {/* Call Button */}
-      <a
-        href="tel:+916399230526"
-        className="w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        title="Call Us"
-      >
-        <FaPhone className="text-black w-7 h-7" />
-      </a>
-    </div>
+  {/* Call Button */}
+  <a
+    href="tel:+916399230526"
+    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+    title="Call Us"
+  >
+    <FaPhone className="text-black w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+  </a>
+</div>
+
     </div>
   );
 }

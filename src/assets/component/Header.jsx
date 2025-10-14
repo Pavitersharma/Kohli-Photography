@@ -27,12 +27,12 @@ export default function Header() {
           <Link to="/portfolio" className="hover:text-yellow-500 transition">Portfolio</Link>
           <Link to="/about" className="hover:text-yellow-500 transition">About</Link>
           <Link to="/contact" className="hover:text-yellow-500 transition">Contact</Link>
-          <a 
-            href="#get-started" 
+          <Link 
+            to="/contact" 
             className="bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
           >
             Get Started
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -52,12 +52,12 @@ export default function Header() {
           <Link to="/portfolio" className="hover:text-yellow-500 transition">Portfolio</Link>
           <Link to="/about" className="hover:text-yellow-500 transition">About</Link>
           <Link to="/contact" className="hover:text-yellow-500 transition">Contact</Link>
-          <a 
-            href="#get-started" 
+          <Link 
+            to="/contact" 
             className="bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       )}
     </header>

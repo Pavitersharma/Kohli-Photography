@@ -105,28 +105,28 @@ With a passion for capturing raw emotions and timeless beauty, we turn your prec
         </div>
       </div>
     </section>
-    <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
-      
-      {/* WhatsApp Button */}
-      <a
-        href="https://wa.me/916399230526"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        title="Chat on WhatsApp"
-      >
-        <FaWhatsapp className="text-white w-7 h-7" />
-      </a>
+    <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/916399230526"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+    title="Chat on WhatsApp"
+  >
+    <FaWhatsapp className="text-white w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+  </a>
 
-      {/* Call Button */}
-      <a
-        href="tel:+916399230526"
-        className="w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        title="Call Us"
-      >
-        <FaPhone className="text-black w-7 h-7" />
-      </a>
-    </div>
+  {/* Call Button */}
+  <a
+    href="tel:+916399230526"
+    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+    title="Call Us"
+  >
+    <FaPhone className="text-black w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+  </a>
+</div>
+
     
         
     </>
