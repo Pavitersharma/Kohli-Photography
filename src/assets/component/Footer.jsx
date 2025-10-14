@@ -112,7 +112,8 @@ export default function Footer() {
               <li class="flex items-center space-x-2">
                 <i class="fas fa-phone text-yellow-500"></i>
                 <a href="tel:+1234567890" class="hover:text-yellow-500">
-                  +91 (976) 970-3480
+                  
+                  +91 (639) 923-0526
                 </a>
               </li>
               <li class="flex items-center space-x-2">
