@@ -184,7 +184,7 @@ export default function Homepage() {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
@@ -372,7 +372,7 @@ export default function Homepage() {
          >
            <FaPhone className="text-black w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
          </a>
-       </div> 
+       </div>
     </div>
   );
 }
