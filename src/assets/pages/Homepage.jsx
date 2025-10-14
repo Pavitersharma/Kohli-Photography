@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
 
 // ✅ Importing images
-import slider1 from "../images/1.webp";
+import slider1 from "../images/8.webp";
 import slider2 from "../images/2.webp";
 import slider3 from "../images/3.webp";
 import wedding from "../images/wedding.webp";
@@ -88,47 +88,48 @@ export default function Homepage() {
   return (
     <>
       {/* ===================== 🏞️ HERO / SLIDER SECTION ===================== */}
-      <div className="relative w-full h-[90vh] overflow-hidden ">
-        <Slider {...settings}>
-          {/* Slide 1 */}
-          <div>
-            <img
-              src={slider1}
-              alt="Kohli Photography Slide 1"
-              className="w-full h-[100vh] object-cover"
-            />
-            <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col items-center justify-center text-white text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                Capture Your Moments
-              </h1>
-              <p className="text-lg md:text-2xl mb-6">
-                Kohli Photography — Where Every Shot Tells a Story
-              </p>
-              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-                Book a Shoot
-              </button>
-            </div>
-          </div>
-
-          {/* Slide 2 */}
-          <div>
-            <img
-              src={slider2}
-              alt="Kohli Photography Slide 2"
-              className="w-full h-[140vh] object-cover"
-            />
-          </div>
-
-          {/* Slide 3 */}
-          <div>
-            <img
-              src={slider3}
-              alt="Kohli Photography Slide 3"
-              className="w-full h-[150vh] object-cover"
-            />
-          </div>
-        </Slider>
+     <div className="relative w-full h-screen sm:h-[90vh] overflow-hidden">
+  <Slider {...settings}>
+    {/* Slide 1 */}
+    <div className="relative">
+      <img
+        src={slider1}
+        alt="Kohli Photography Slide 1"
+        className="w-full h-[80vh] sm:h-[90vh] md:h-screen object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 sm:mb-4 leading-tight">
+          Capture Your Moments
+        </h1>
+        <p className="text-base sm:text-lg md:text-2xl mb-5 sm:mb-6 max-w-2xl">
+          Kohli Photography — Where Every Shot Tells a Story
+        </p>
+        <button className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+          Book a Shoot
+        </button>
       </div>
+    </div>
+
+    {/* Slide 2 */}
+    <div>
+      <img
+        src={slider2}
+        alt="Kohli Photography Slide 2"
+        className="w-full h-[80vh] sm:h-[90vh] md:h-screen object-cover object-center"
+      />
+    </div>
+
+    {/* Slide 3 */}
+    <div>
+      <img
+        src={slider3}
+        alt="Kohli Photography Slide 3"
+        className="w-full h-[80vh] sm:h-[90vh] md:h-screen object-cover object-center"
+      />
+    </div>
+  </Slider>
+</div>
+
 
       {/* ===================== 📊 STATS SECTION ===================== */}
       {/* <div className="bg-[#111] text-center py-10">
