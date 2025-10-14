@@ -47,11 +47,11 @@ export default function Header() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden bg-black flex flex-col items-center space-y-4 py-6 border-t border-gray-700">
-          <a href="#home" className="hover:text-yellow-500 transition">Home</a>
-          <a href="#services" className="hover:text-yellow-500 transition">Services</a>
-          <a href="#portfolio" className="hover:text-yellow-500 transition">Portfolio</a>
-          <a href="#about" className="hover:text-yellow-500 transition">About</a>
-          <a href="#contact" className="hover:text-yellow-500 transition">Contact</a>
+          <Link to="/" className="hover:text-yellow-500 transition">Home</Link>
+          <Link to="/services" className="hover:text-yellow-500 transition">Services</Link>
+          <Link to="/portfolio" className="hover:text-yellow-500 transition">Portfolio</Link>
+          <Link to="/about" className="hover:text-yellow-500 transition">About</Link>
+          <Link to="/contact" className="hover:text-yellow-500 transition">Contact</Link>
           <a 
             href="#get-started" 
             className="bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
