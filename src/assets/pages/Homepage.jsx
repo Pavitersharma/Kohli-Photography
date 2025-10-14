@@ -7,7 +7,7 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa";
 // ✅ Importing images
 import slider1 from "../images/8.webp";
 import slider2 from "../images/2.webp";
-import slider3 from "../images/3.webp";
+import slider3 from "../images/14.webp";
 import wedding from "../images/wedding.webp";
 import service1 from "../images/service/1.webp";
 import service2 from "../images/service/2.webp";
@@ -95,7 +95,7 @@ export default function Homepage() {
       <img
         src={slider1}
         alt="Kohli Photography Slide 1"
-        className="w-full h-[80vh] sm:h-[90vh] md:h-screen object-cover object-center"
+        className="w-full h-[90vh] sm:h-[90vh] md:h-screen object-cover object-center"
       />
       <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 sm:mb-4 leading-tight">
@@ -115,7 +115,7 @@ export default function Homepage() {
       <img
         src={slider2}
         alt="Kohli Photography Slide 2"
-        className="w-full h-[80vh] sm:h-[90vh] md:h-screen object-cover object-center"
+        className="w-full h-[150vh] sm:h-[90vh] md:h-screen object-cover "
       />
     </div>
 

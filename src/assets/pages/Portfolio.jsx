@@ -18,6 +18,7 @@ import image15 from "../images/portfolio/15.webp"
 
 
 
+
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
 
 
@@ -159,6 +160,23 @@ export default function Portfolio() {
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
             />
           </div>
+          {/* Video 1 */}
+  <div className="overflow-hidden rounded-lg group">
+    <video
+      src="/videos/video1.mp4" // 👉 Replace with your video path
+      controls
+      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+    />
+  </div>
+
+  {/* Video 2 */}
+  <div className="overflow-hidden rounded-lg group">
+    <video
+      src="/videos/video2.mp4" // 👉 Replace with your video path
+      controls
+      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+    />
+  </div>
         </div>
       </section>
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
