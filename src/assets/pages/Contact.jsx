@@ -183,7 +183,7 @@ export default function ContactSection() {
               type="submit"
               className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 group"
             >
-              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform cursor-pointer" />
               SEND MESSAGE
             </button>
           </form>

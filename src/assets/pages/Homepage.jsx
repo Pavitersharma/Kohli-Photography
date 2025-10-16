@@ -344,7 +344,7 @@ export default function Homepage() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-400 to-yellow-500 text-black font-semibold py-3 rounded-md shadow-[0_0_25px_rgba(255,165,0,0.4)] hover:opacity-90 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-orange-400 to-yellow-500 text-black font-semibold py-3 rounded-md shadow-[0_0_25px_rgba(255,165,0,0.4)] hover:opacity-90 transition-all duration-300 cursor-pointer "
               >
                 SUBMIT ENQUIRY
               </button>
