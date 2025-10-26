@@ -286,7 +286,7 @@ export default function Homepage() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Email Us</h4>
-                  <p className="text-gray-400">info@kohliphotography.com</p>
+                  <a href="mailto:Kuldeepkohli176@gmail.com"><p className="text-gray-400">kohlikuldeep704@gmail.com</p></a>
                 </div>
               </div>
 
